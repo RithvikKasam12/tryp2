@@ -1,0 +1,56 @@
+<html>
+    <style>
+        .column{
+            float: left;
+            border: 1;
+            height: max-content;
+        }
+
+        .left{
+            width: 20%;
+            background-color: #d62323;
+            height: 100%;
+        }
+        .right{
+            width: 80%;
+            background-color: #e4e4e4;
+            height: 100%;
+            text-align: center;
+        }
+        @font-face {
+            font-family: JFS;
+            src: url(JFS.ttf);
+        }
+        @font-face {
+            font-family: FM;
+            src: url(FM.ttf);
+        }
+
+
+
+        label{
+            font-family: FM;
+        }
+
+        h1{
+            font-family: JSF;
+        }
+    </style>
+
+    <div class="column left">
+        random text goes here
+    </div>
+
+    <div class="column right">
+        <h1>Would you kindly enter your data?</h1><br>
+        <form action="{{url_for('add_data', table_name = table_name)}}" method = "POST">
+            <label for="xval" >Enter {{x}}</label><br>
+            <input type="number" id ="xval" name="xval"><br>
+            <label for="yval"> Enter {{y}}</label><br>
+            <input type="number" id ="yval" name="yval"><br>
+            <button type="submit">Enter the data</button>
+
+
+        </form>
+    </div>
+</html>

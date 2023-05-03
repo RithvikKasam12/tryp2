@@ -1,0 +1,76 @@
+<html>
+    <style>
+        @font-face {
+            font-family: JFS;
+            src: url(JFS.ttf);
+        }
+
+        @font-face {
+            font-family: FM;
+            src: url(FM.ttf);
+        }
+
+        .column{
+            float: left;
+        }
+
+        .left{
+            font-family: FM;
+            width: 60%;
+            border-width: 2px;
+            border: 1;
+            font-size: xx-large;
+            float:left
+        }
+
+        .right{
+            width: 40%;
+            font-family: JFS;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+            background-color: #d62323;
+            margin-bottom: 3vh;
+
+        }
+        
+        input[type="text"]{
+            font-size: xx-large ;
+            margin-bottom: 3vh;
+        }
+        select{
+            font-size: xx-large;
+            font-family: FM;
+        }
+
+        button{
+            font-size: xx-large;
+            font-family: FM;
+            text-align: center;
+        }
+    </style>
+    
+    <form method="post" action="{{url_for('create')}}" class="flex-container column left ">
+        
+        <label for="name">What will this graph track?</label><br>
+        <input id="name" name = "table_name" type="text"><br>
+        <label for="XV">What is the x variable?</label><br>
+        <input id="XV" name = "XV" type="text"><br>
+        <label for="YV">What is the y variable?</label><br>
+        <input id="YV" name = "YV"type="text"><br>
+        
+
+        <button type="submit" > Create your graph</button>
+
+    
+    </form>
+
+    <p class="column right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero molestias debitis. Sapiente deserunt, exercitationem ab natus sint eos reiciendis consectetur nam error reprehenderit similique ad quibusdam voluptatem dolore asperiores.</p>
+</html>

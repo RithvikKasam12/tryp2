@@ -1,0 +1,53 @@
+<html>
+    <style>
+        body{
+            background-color: #181818;
+        }
+        .btn{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            font-family:'sans serif','FM'
+        }
+
+        .btn1{
+            color: #e4e4e4;
+            background-color: #d62323 ;
+        }
+
+        .btn2{
+            background-color: #e4e4e4;
+            color: #ba0000;
+        }
+        .btn3{
+            background-color: #323232;
+            color:#d62323;
+        }
+
+        .menu{
+            display: flex;
+
+        }
+        #outer
+        {
+            width:100%;
+            text-align: center;
+            display: flex;
+            margin-top: 15%;
+            margin-bottom: 15%;
+            justify-content: center;
+        }
+        .inner
+        {
+            display: inline-block;
+        }   
+
+    </style>
+
+    <div class="menu" id = "outer">
+        <button class="btn inner btn1" onclick="window.location.href='/create'">create a new graph</button>
+        <button class="btn inner btn2" onclick="location.href='https://www.youtube.com/watch?v=8xQVT3XHaQk'"> I am for nothing, but design purposes</button>
+        <button class="btn inner btn3" onclick="window.location.href='/display'"> View your created graphs</button>
+    </div>
+    
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <style>
+        @font-face {
+            font-family: JFS;
+            src: url(JFS.ttf);
+        }
+        @font-face {
+            font-family: FM;
+            src: url(FM.ttf);
+        }
+        header{
+            font-size: xx-large;
+            font-family: JSF;
+        }
+        button{
+            size: 150px;
+            font-family: FM;
+        }
+        </style>
+
+        <header>{{table_name}}</header>
+        <div class="container">
+            <img src="{{url_for('static', filename='graphs/graph.png')}}">
+        </div>
+        <button onclick="{{url_for('add_data', table_name = table_name)}}">Add more data></button>
+
+</html>

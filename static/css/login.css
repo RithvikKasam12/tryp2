@@ -1,0 +1,38 @@
+body {
+    background-image: url('bg1.jpg');
+}
+@font-face {
+    font-family: JFS;
+    src: url(JFS.ttf);
+}
+
+@font-face {
+    font-family: FM;
+    src: url(FM.ttf);
+}
+
+h1{
+    text-align: center;
+    font-size: 7vh;
+    font-family: JFS;
+}
+
+form{
+    text-align: center;
+    margin-top: 15%;
+    font-family: FM;
+
+}
+::placeholder{
+    font-family: FM;
+}
+input{
+    width: auto;
+    height:auto;
+    ;
+}
+
+button{
+    font-family: FM;
+    margin-top: 30px;
+}
