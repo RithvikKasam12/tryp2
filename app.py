@@ -66,10 +66,8 @@ def add_data():
             password="root")   
 
         cursor = db.cursor()
-        sql = f"INSERT INTO {table_name} ({x_label}, {y_label}) VALUES (%s, %s)"
-        val = (x_value, y_value)
-
-        cursor.execute(sql, val)
+        cursor.execute(f"INSERT INTO {table_name} VALUES ({x_value}, {y_value})")
+        
         db.commit()
         
         return redirect(f'/plot_graph?table_name={table_name}&x_label={x_label}&y_label={y_label}')
